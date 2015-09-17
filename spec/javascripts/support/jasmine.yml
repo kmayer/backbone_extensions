@@ -1,10 +1,10 @@
 src_files:
-  - public/javascripts/jquery-1.9.0.js
-  - public/javascripts/underscore.js
-  - public/javascripts/backbone-1.1.2.js
-  - public/javascripts/underscore.string.js
-  - public/javascripts/inflection.js
-  - public/javascripts/underscore.extensions.js
+  - vendor/assets/bower_components/jquery/jquery.js
+  - vendor/assets/bower_components/underscore/underscore.js
+  - vendor/assets/bower_components/backbone/backbone.js
+  - vendor/assets/bower_components/underscore.string/lib/underscore.string.js
+  - vendor/assets/bower_components/inflection-js/index.txt
+  - vendor/assets/bower_components/underscore.extensions/index.js
   - lib/assets/javascripts/backbone_extensions/include.js
   - lib/assets/javascripts/**/*.js
 stylesheets:

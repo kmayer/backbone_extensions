@@ -21,4 +21,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'thin'
   s.add_development_dependency 'yajl-ruby'
   s.add_runtime_dependency 'rails', '>= 3.1'
+  s.add_development_dependency 'bower-rails'
 end

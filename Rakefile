@@ -1,14 +1,7 @@
 #!/usr/bin/env rake
-begin
-  require 'bundler/setup'
-rescue LoadError
-  puts 'You must `gem install bundler` and `bundle install` to run rake tasks'
-end
-
-require 'yajl/json_gem'
-Bundler::GemHelper.install_tasks
-
+require 'bundler/gem_tasks'
 require 'jshint/tasks'
+require 'bower-rails'
 
 begin
   require 'jasmine'
@@ -22,3 +15,7 @@ end
 JSHint.config_path = 'config/jshint.yml'
 task :default => [:jshint, :'jasmine:ci']
 
+spec = Gem::Specification.find_by_name 'bower-rails'
+load "#{spec.gem_dir}/lib/tasks/bower.rake"
+
+task 'jasmine:require' => 'bower:install'

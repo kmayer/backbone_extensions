@@ -1,0 +1,6 @@
+asset 'backbone', '1.1.2'
+asset 'jquery', '1.9.0'
+asset 'underscore', '1.6.0'
+asset 'underscore.string', '2.3.0'
+asset 'inflection-js', 'https://inflection-js.googlecode.com/git-history/f9e37b22d12cecbd9af2b04d398b85390db1bb70/src/inflection.js'
+asset 'underscore.extensions', 'https://raw.githubusercontent.com/rdy/underscore_extensions/v0.2.7/lib/assets/javascripts/underscore.extensions.js'
